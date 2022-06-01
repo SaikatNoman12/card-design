@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Noto Sans Bengali', sans-serif; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* global style */
+.title {
+    font-size: 2.25rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    letter-spacing: .15px;
+    color: #fff;
+}
+
+.global-section {
+    width: 100%;
+    padding: 60px 0px;
+}
+
+.global-section-child {
+    width: 80%;
+    margin: auto;
+}
+
+.global-section-child p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    line-height: 1.75rem;
+    color: #fff;
+}
+
+/* global style */
+
+
+
+
+/* ==============
+ main style start 
+ ============== */
+
+.section-one {
+    background-color: rgb(16, 15, 15);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.card {
+    height: 350px;
+    background-color: #81a98e;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-details{
+    padding: 20px;
+}
+
+.course-details{
+    min-height: 110px;
+}
+
+.card-details h2,
+p>del,
+p>strong {
+    color: #fff;
+    transition: .8s;
+    transform-origin: bottom center;
+    transform: scale(1);
+    text-align: center;
+
+}
+
+
+.card-details p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.card-details h2 span{
+    font-size: 20px;
+}
+
+.button {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.button .btn {
+    background-color: rgb(246, 182, 182);
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    cursor: pointer;
+    transform: scaleY(1);
+    transform-origin: bottom center;
+    transition: .8s;
+    letter-spacing: .5px;
+}
+
+.badge {
+    background-color: #fff;
+    transition: .8s;
+    transform-origin: bottom center;
+    transform: scale(1);
+    position: absolute;
+    display: inline;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 10px;
+    padding: 3px 10px 3px 6px;
+
+}
+
+.badge p {
+    color: blue;
+    font-size: 16px;
+    transform-origin: bottom center;
+    transform: scale(1);
+    transition: .8s;
+    font-weight: 600;
+    letter-spacing: .8px;
+    margin: 0;
+}
+
+
+.hover-effect {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transform: scaleY(0);
+    transform-origin: bottom center;
+    position: absolute;
+    bottom: 0;
+    transition: all .6s;
+    opacity: 0;
+    background-color: rgb(254, 249, 249);
+    z-index: -10;
+}
+
+.card:hover .hover-effect {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+
+.card:hover .card-details h2 {
+    color: black;
+    transform: scaleY(1);
+
+}
+
+.card:hover .card-details p del {
+    color: black;
+    transform: scaleY(1);
+
+}
+
+.card:hover .card-details p strong {
+    color: black;
+    transform: scaleY(1);
+
+}
+
+.card:hover .badge {
+    transform: scale(1);
+    background-color: rgb(42, 42, 255);
+}
+.card:hover .badge p {
+    color: #fff;
+}
+
+.card:hover .button .btn {
+    color: black;
+    transform: scaleY(1);
+}
+
+.button .btn:hover {
+    letter-spacing: 2px;
+}
+
+@media (max-width:992px){
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-one-child p {
+        font-size: 16px;
+    }
+}
+@media (max-width:767px){
+    .section-one-child .title{
+        font-size: 26px !important ;
+    }
+
+    .section-one-child p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:576px){
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* ===========
+ main style end 
+ ============ */
+
+
+
+
+
+
+
+/* global responsive start */
+@media (max-width:992px) {
+    .global-section-child {
+        width: 90%;
+    }
+}
+
+
+@media (max-width:767px) {
+    .logo img {
+        width: 100px;
+    }
+
+    .global-section-child .title {
+        font-size: 20px;
+    }
+
+}
+
+/* global responsive start */
