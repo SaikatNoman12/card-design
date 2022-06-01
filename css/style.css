@@ -81,6 +81,10 @@ body {
     min-height: 110px;
 }
 
+.card-details h2{
+    min-height: 60px;
+}
+
 .card-details h2,
 p>del,
 p>strong {
@@ -257,5 +261,4 @@ p>strong {
     }
 
 }
-
 /* global responsive start */
